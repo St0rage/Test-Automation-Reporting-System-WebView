@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Test Automation Reporting System</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <link
+      rel="icon"
+      href="assets/img/kaiadmin/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts and icons -->
+    <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["assets/css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="assets/css/kaiadmin.min.css" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <!-- <link rel="stylesheet" href="assets/css/demo.css" /> -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar" data-background-color="dark2">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div
+            class="logo-header d-flex justify-content-center"
+            data-background-color="dark2"
+          >
+            <a href="index.html" class="logo">
+              <img
+                src="assets/img/kaiadmin/logo_light.svg"
+                alt="navbar brand"
+                class="navbar-brand"
+                height="20"
+              />
+            </a>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-secondary">
+              <li class="nav-item active">
+                <a href="widgets.html">
+                  <i class="fas fa-home"></i>
+                  <p>Dashboard</p>
+                </a>
+              </li>
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">Projects</h4>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#kopra">
+                  <i class="fas fa-flask"></i>
+                  <p>KOPRA</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="kopra">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="components/avatars.html">
+                        <span class="sub-item">KP-9000</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="components/buttons.html">
+                        <span class="sub-item">KP-8000</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="components/gridsystem.html">
+                        <span class="sub-item">KP-7000</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#tps">
+                  <i class="fas fa-flask"></i>
+                  <p>TPS</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="tps">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="components/avatars.html">
+                        <span class="sub-item">1A</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="components/buttons.html">
+                        <span class="sub-item">R2</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="components/gridsystem.html">
+                        <span class="sub-item">OPICS</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="main-panel">
+        <div class="main-header">
+          <!-- Navbar Header -->
+          <nav
+            class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom"
+          >
+            <div class="container-fluid">
+              <nav
+                class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex"
+              >
+                <h3 class="fw-bold">Test Automation Reporting System</h3>
+              </nav>
+            </div>
+          </nav>
+          <!-- End Navbar -->
+        </div>
+
+        <div class="container">
+          <div class="page-inner">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="card-title">KOPRA - KP-9000</div>
+                      <form action="">
+                        <div class="d-flex align-items-center">
+                          <div class="d-flex mx-3 align-items-center">
+                            <div class="px-2 text-center">
+                              <span class="fw-medium">Test Case</span>
+                            </div>
+                            <div>
+                              <select
+                                class="form-select form-select-sm"
+                                aria-label="Small select example"
+                              >
+                                <option selected>all</option>
+                                <option value="1">KP-9001</option>
+                                <option value="2">KP-9002</option>
+                                <option value="3">KP-9003</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="px-2 text-center">
+                              <span>Date</span>
+                            </div>
+                            <div>
+                              <input
+                                type="email"
+                                class="form-control form-control-sm"
+                                id="exampleFormControlInput1"
+                                placeholder="dd/mm/yyyy"
+                              />
+                            </div>
+                          </div>
+                          <button
+                            type="submit"
+                            class="btn btn-sm btn-primary ms-3"
+                          >
+                            Search
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Test Case</th>
+                          <th scope="col">File Name</th>
+                          <th scope="col">Created At</th>
+                          <th scope="col">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>
+                            <span class="badge badge-danger">FAILED</span>
+                          </td>
+                          <td>KP-9001</td>
+                          <td>KP-9000_KP-9001_07-07-2024_13:02:32.pdf</td>
+                          <td>07-07-2024_13:02:32</td>
+                          <td>
+                            <button class="btn btn-primary btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-eye"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-success btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-cloud-download-alt"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-danger btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-trash-alt"></li>
+                              </div>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>
+                            <span class="badge badge-success">PASSED</span>
+                          </td>
+                          <td>KP-9001</td>
+                          <td>KP-9000_KP-9001_07-07-2024_13:02:32.pdf</td>
+                          <td>07-07-2024_13:02:32</td>
+                          <td>
+                            <button class="btn btn-primary btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-eye"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-success btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-cloud-download-alt"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-danger btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-trash-alt"></li>
+                              </div>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>
+                            <span class="badge badge-success">PASSED</span>
+                          </td>
+                          <td>KP-9001</td>
+                          <td>KP-9000_KP-9001_07-07-2024_13:02:32.pdf</td>
+                          <td>07-07-2024_13:02:32</td>
+                          <td>
+                            <button class="btn btn-primary btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-eye"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-success btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-cloud-download-alt"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-danger btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-trash-alt"></li>
+                              </div>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>
+                            <span class="badge badge-success">PASSED</span>
+                          </td>
+                          <td>KP-9001</td>
+                          <td>KP-9000_KP-9001_07-07-2024_13:02:32.pdf</td>
+                          <td>07-07-2024_13:02:32</td>
+                          <td>
+                            <button class="btn btn-primary btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-eye"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-success btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-cloud-download-alt"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-danger btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-trash-alt"></li>
+                              </div>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>
+                            <span class="badge badge-success">PASSED</span>
+                          </td>
+                          <td>KP-9001</td>
+                          <td>KP-9000_KP-9001_07-07-2024_13:02:32.pdf</td>
+                          <td>07-07-2024_13:02:32</td>
+                          <td>
+                            <button class="btn btn-primary btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-eye"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-success btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-cloud-download-alt"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-danger btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-trash-alt"></li>
+                              </div>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>
+                            <span class="badge badge-success">PASSED</span>
+                          </td>
+                          <td>KP-9001</td>
+                          <td>KP-9000_KP-9001_07-07-2024_13:02:32.pdf</td>
+                          <td>07-07-2024_13:02:32</td>
+                          <td>
+                            <button class="btn btn-primary btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-eye"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-success btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-cloud-download-alt"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-danger btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-trash-alt"></li>
+                              </div>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>
+                            <span class="badge badge-success">PASSED</span>
+                          </td>
+                          <td>KP-9001</td>
+                          <td>KP-9000_KP-9001_07-07-2024_13:02:32.pdf</td>
+                          <td>07-07-2024_13:02:32</td>
+                          <td>
+                            <button class="btn btn-primary btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-eye"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-success btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-cloud-download-alt"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-danger btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-trash-alt"></li>
+                              </div>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>
+                            <span class="badge badge-success">PASSED</span>
+                          </td>
+                          <td>KP-9001</td>
+                          <td>KP-9000_KP-9001_07-07-2024_13:02:32.pdf</td>
+                          <td>07-07-2024_13:02:32</td>
+                          <td>
+                            <button class="btn btn-primary btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-eye"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-success btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-cloud-download-alt"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-danger btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-trash-alt"></li>
+                              </div>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>
+                            <span class="badge badge-success">PASSED</span>
+                          </td>
+                          <td>KP-9001</td>
+                          <td>KP-9000_KP-9001_07-07-2024_13:02:32.pdf</td>
+                          <td>07-07-2024_13:02:32</td>
+                          <td>
+                            <button class="btn btn-primary btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-eye"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-success btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-cloud-download-alt"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-danger btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-trash-alt"></li>
+                              </div>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>
+                            <span class="badge badge-success">PASSED</span>
+                          </td>
+                          <td>KP-9001</td>
+                          <td>KP-9000_KP-9001_07-07-2024_13:02:32.pdf</td>
+                          <td>07-07-2024_13:02:32</td>
+                          <td>
+                            <button class="btn btn-primary btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-eye"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-success btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-cloud-download-alt"></li>
+                              </div>
+                            </button>
+                            <button class="btn btn-danger btn-sm">
+                              <div class="d-flex justify-content-center">
+                                <li class="fas fa-trash-alt"></li>
+                              </div>
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a class="page-link" href="#">Previous</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Custom template -->
+    </div>
+    <!--   Core JS Files   -->
+    <script src="assets/js/core/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/core/popper.min.js"></script>
+    <script src="assets/js/core/bootstrap.min.js"></script>
+
+    <!-- jQuery Scrollbar -->
+    <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+    <!-- Chart JS -->
+    <script src="assets/js/plugin/chart.js/chart.min.js"></script>
+
+    <!-- jQuery Sparkline -->
+    <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Chart Circle -->
+    <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+
+    <!-- Datatables -->
+    <script src="assets/js/plugin/datatables/datatables.min.js"></script>
+
+    <!-- Bootstrap Notify -->
+    <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+    <!-- jQuery Vector Maps -->
+    <script src="assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+    <script src="assets/js/plugin/jsvectormap/world.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+    <!-- Kaiadmin JS -->
+    <script src="assets/js/kaiadmin.min.js"></script>
+  </body>
+</html>
